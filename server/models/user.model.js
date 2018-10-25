@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
+const jwt = require('jsonwebtoken');
+
 var userSchema = new mongoose.Schema({
     fullName: {
         type: String,
@@ -36,6 +38,7 @@ userSchema.path('password').validate((val1) => {
     passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/;
     return passwordRegex.test(val1);
 }, 'Invalid password,Minimum eight characters, at least one letter, one number and one special character.');
+
 // Events
 userSchema.pre('save', function (next) {
     bcrypt.genSalt(10, (err, salt) => {
@@ -47,4 +50,16 @@ userSchema.pre('save', function (next) {
     });
 });
 
+// Methods
+userSchema.methods.verifyPassword = function (password) {
+    return bcrypt.compareSync(password, this.password);
+};
+
+userSchema.methods.generateJwt = function () {
+    return jwt.sign({ _id: this._id},
+        process.env.JWT_SECRET,
+    {
+        expiresIn: process.env.JWT_EXP
+    });
+}
 mongoose.model('User', userSchema);
