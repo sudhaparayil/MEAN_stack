@@ -9,6 +9,8 @@ const passport = require('passport');
 
 const rtsIndex = require('./routes/index.router');
 
+var path = require('path');
+
 var app = express();
 
 // middleware
@@ -16,7 +18,12 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(passport.initialize());
 app.use('/api', rtsIndex);
+// ngbuild
+app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('*', (req, res)=>{
+    res.sendFile(path.join(__dirname, 'pulic/index.html'));
+})
 //error handler
 app.use((err, req, res, next) => {
     if (err.name === 'ValidationError') {
