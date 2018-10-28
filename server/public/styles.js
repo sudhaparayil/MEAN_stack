@@ -539,7 +539,7 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! c:\project\project\MEAN_stack\Angular6\src\styles.css */"./src/styles.css");
+module.exports = __webpack_require__(/*! C:\project\project\MEAN_stack\Angular6\src\styles.css */"./src/styles.css");
 
 
 /***/ })

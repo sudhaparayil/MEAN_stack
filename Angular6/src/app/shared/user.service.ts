@@ -33,6 +33,12 @@ export class UserService {
     return this.http.get(environment.apiBaseUrl + '/userProfile');
   }
 
+  getProfileById(id) {
+    return this.http.get(environment.apiBaseUrl + '/getProfile'+id);
+    // let h = this.setHeader();
+    // return this.http.get(this.serviceUrl + "getCompanyDetails/" + id, { headers: h })
+    //   .map(res => res.json());
+  }
 
   //Helper Methods
 

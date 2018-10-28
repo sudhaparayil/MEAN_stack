@@ -7,8 +7,10 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const passport = require('passport');
 
-const rtsIndex = require('./routes/index.router');
 
+const passportSetup = require('./config/passportConfig');
+const rtsIndex = require('./routes/index.router');
+const authRoutes = require('./routes/auth-routes');
 var path = require('path');
 
 var app = express();
@@ -17,7 +19,11 @@ var app = express();
 app.use(bodyParser.json());
 app.use(cors());
 app.use(passport.initialize());
+app.use(bodyParser.json({limit: '50mb'}));
 app.use('/api', rtsIndex);
+app.use('/auth', authRoutes);
+
+
 // ngbuild
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -32,6 +38,8 @@ app.use((err, req, res, next) => {
         res.status(422).send(valErrors)
     }
 });
+
+
 
 // start server
 app.listen(process.env.PORT, () => console.log(`Server started at port : ${process.env.PORT}`));

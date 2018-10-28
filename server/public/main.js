@@ -105,6 +105,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _shared_user_service__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ./shared/user.service */ "./src/app/shared/user.service.ts");
 /* harmony import */ var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ./auth/auth.guard */ "./src/app/auth/auth.guard.ts");
 /* harmony import */ var _auth_auth_interceptor__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ./auth/auth.interceptor */ "./src/app/auth/auth.interceptor.ts");
+/* harmony import */ var _google_user_google_user_component__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ./google-user/google-user.component */ "./src/app/google-user/google-user.component.ts");
+/* harmony import */ var _my_profile_my_profile_component__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ./my-profile/my-profile.component */ "./src/app/my-profile/my-profile.component.ts");
 var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -129,6 +131,8 @@ var __decorate = (undefined && undefined.__decorate) || function (decorators, ta
 //other
 
 
+
+
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -139,7 +143,9 @@ var AppModule = /** @class */ (function () {
                 _user_user_component__WEBPACK_IMPORTED_MODULE_6__["UserComponent"],
                 _user_sign_up_sign_up_component__WEBPACK_IMPORTED_MODULE_7__["SignUpComponent"],
                 _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_8__["UserProfileComponent"],
-                _user_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_9__["SignInComponent"]
+                _user_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_9__["SignInComponent"],
+                _google_user_google_user_component__WEBPACK_IMPORTED_MODULE_14__["GoogleUserComponent"],
+                _my_profile_my_profile_component__WEBPACK_IMPORTED_MODULE_15__["MyProfileComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
@@ -271,6 +277,141 @@ var AuthInterceptor = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/google-user/google-user.component.css":
+/*!*******************************************************!*\
+  !*** ./src/app/google-user/google-user.component.css ***!
+  \*******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/google-user/google-user.component.html":
+/*!********************************************************!*\
+  !*** ./src/app/google-user/google-user.component.html ***!
+  \********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  google-user works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/google-user/google-user.component.ts":
+/*!******************************************************!*\
+  !*** ./src/app/google-user/google-user.component.ts ***!
+  \******************************************************/
+/*! exports provided: GoogleUserComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "GoogleUserComponent", function() { return GoogleUserComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+// import { Router, ActivatedRoute } from '@angular/router';
+// import { UserService } from '../shared/user.service';
+var GoogleUserComponent = /** @class */ (function () {
+    // sub: any;
+    // p_id: '';
+    function GoogleUserComponent() {
+    }
+    // constructor( private userService: UserService, private router: Router, private route: ActivatedRoute) { }
+    GoogleUserComponent.prototype.ngOnInit = function () {
+        // this.sub = this.route.params.subscribe(params => {
+        // 	this.p_id = params.id;
+        //   console.log(this.p_id);
+        // })
+    };
+    GoogleUserComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-google-user',
+            template: __webpack_require__(/*! ./google-user.component.html */ "./src/app/google-user/google-user.component.html"),
+            styles: [__webpack_require__(/*! ./google-user.component.css */ "./src/app/google-user/google-user.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], GoogleUserComponent);
+    return GoogleUserComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/my-profile/my-profile.component.css":
+/*!*****************************************************!*\
+  !*** ./src/app/my-profile/my-profile.component.css ***!
+  \*****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = ""
+
+/***/ }),
+
+/***/ "./src/app/my-profile/my-profile.component.html":
+/*!******************************************************!*\
+  !*** ./src/app/my-profile/my-profile.component.html ***!
+  \******************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  my-profile works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/my-profile/my-profile.component.ts":
+/*!****************************************************!*\
+  !*** ./src/app/my-profile/my-profile.component.ts ***!
+  \****************************************************/
+/*! exports provided: MyProfileComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MyProfileComponent", function() { return MyProfileComponent; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+var __decorate = (undefined && undefined.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (undefined && undefined.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+var MyProfileComponent = /** @class */ (function () {
+    function MyProfileComponent() {
+    }
+    MyProfileComponent.prototype.ngOnInit = function () {
+    };
+    MyProfileComponent = __decorate([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
+            selector: 'app-my-profile',
+            template: __webpack_require__(/*! ./my-profile.component.html */ "./src/app/my-profile/my-profile.component.html"),
+            styles: [__webpack_require__(/*! ./my-profile.component.css */ "./src/app/my-profile/my-profile.component.css")]
+        }),
+        __metadata("design:paramtypes", [])
+    ], MyProfileComponent);
+    return MyProfileComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/routes.ts":
 /*!***************************!*\
   !*** ./src/app/routes.ts ***!
@@ -286,6 +427,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _user_sign_in_sign_in_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./user/sign-in/sign-in.component */ "./src/app/user/sign-in/sign-in.component.ts");
 /* harmony import */ var _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./user-profile/user-profile.component */ "./src/app/user-profile/user-profile.component.ts");
 /* harmony import */ var _auth_auth_guard__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./auth/auth.guard */ "./src/app/auth/auth.guard.ts");
+/* harmony import */ var _google_user_google_user_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./google-user/google-user.component */ "./src/app/google-user/google-user.component.ts");
+/* harmony import */ var _my_profile_my_profile_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./my-profile/my-profile.component */ "./src/app/my-profile/my-profile.component.ts");
+
+
 
 
 
@@ -302,6 +447,12 @@ var appRoutes = [
     },
     {
         path: 'userprofile', component: _user_profile_user_profile_component__WEBPACK_IMPORTED_MODULE_3__["UserProfileComponent"], canActivate: [_auth_auth_guard__WEBPACK_IMPORTED_MODULE_4__["AuthGuard"]]
+    },
+    {
+        path: 'my', component: _my_profile_my_profile_component__WEBPACK_IMPORTED_MODULE_6__["MyProfileComponent"]
+    },
+    {
+        path: 'googleprofile', component: _google_user_google_user_component__WEBPACK_IMPORTED_MODULE_5__["GoogleUserComponent"]
     },
     {
         path: '', redirectTo: '/login', pathMatch: 'full'
@@ -492,7 +643,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <img src=\"assets/img/single_user.png\" id=\"icon\" alt=\"User Icon\" />\n</div>\n<form #signInForm=\"ngForm\" (ngSubmit)=\"signInForm.valid && onSubmit(signInForm)\">\n  <input type=\"text\" name=\"email\" #email=\"ngModel\" [(ngModel)]=\"model.email\" placeholder=\"Email\" [pattern]=\"emailRegex\" required\n    [ngClass]=\"{'invalid-textbox' :signInForm.submitted && !email.valid }\">\n  <div *ngIf=\"signInForm.submitted && email.errors?.pattern\">\n    <label class=\"validation-message\">Invalid email address.</label>\n  </div>\n  <input type=\"password\" name=\"password\" #password=\"ngModel\" [(ngModel)]=\"model.password\" placeholder=\"Password\" required minlength=\"8\"\n    [ngClass]=\"{'invalid-textbox' :signInForm.submitted && !password.valid }\">\n  <div *ngIf=\"signInForm.submitted && password.errors?.minlength\">\n    <label class=\"validation-message\">Minimum 8 characters.</label>\n  </div>\n  <input type=\"submit\" value=\"Sign In\">\n</form>\n<!-- Error message -->\n<div class=\"alert\" *ngIf=\"serverErrorMessages\">\n  {{serverErrorMessages}}\n</div>"
+module.exports = "<div>\n  <img src=\"assets/img/single_user.png\" id=\"icon\" alt=\"User Icon\" />\n</div>\n<form #signInForm=\"ngForm\" (ngSubmit)=\"signInForm.valid && onSubmit(signInForm)\">\n  <input type=\"text\" name=\"email\" #email=\"ngModel\" [(ngModel)]=\"model.email\" placeholder=\"Email\" [pattern]=\"emailRegex\" required\n    [ngClass]=\"{'invalid-textbox' :signInForm.submitted && !email.valid }\">\n  <div *ngIf=\"signInForm.submitted && email.errors?.pattern\">\n    <label class=\"validation-message\">Invalid email address.</label>\n  </div>\n  <input type=\"password\" name=\"password\" #password=\"ngModel\" [(ngModel)]=\"model.password\" placeholder=\"Password\" required minlength=\"8\"\n    [ngClass]=\"{'invalid-textbox' :signInForm.submitted && !password.valid }\">\n  <div *ngIf=\"signInForm.submitted && password.errors?.minlength\">\n    <label class=\"validation-message\">Minimum 8 characters.</label>\n  </div>\n  <input type=\"submit\" value=\"Sign In\">\n</form>\n<a class=\"google-btn\" href=\"/auth/google\">Google+</a>\n<!-- Error message -->\n<div class=\"alert\" *ngIf=\"serverErrorMessages\">\n  {{serverErrorMessages}}\n</div>"
 
 /***/ }),
 
@@ -577,7 +728,7 @@ module.exports = ""
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div>\n  <img src=\"/assets/img/users.png\" id=\"icon\" alt=\"User Icon\" />\n</div>\n\n<form #signUpForm=\"ngForm\" (ngSubmit)=\"signUpForm.valid && onSubmit(signUpForm)\">\n  <input type=\"text\" #fullName=\"ngModel\" [(ngModel)]=\"userService.selectedUser.fullName\" name=\"fullName\" placeholder=\"Full Name\"\n  required  [ngClass]=\"{'invalid-textbox' :signUpForm.submitted && !fullName.valid }\">\n  <div *ngIf=\"signUpForm.submitted && !fullName.valid\">\n    <label class=\"validation-message\">This field is required.</label>\n  </div>\n  <input type=\"text\" #email=\"ngModel\" [(ngModel)]=\"userService.selectedUser.email\" name=\"email\" placeholder=\"Email\"\n  required [pattern]=\"emailRegex\"  [ngClass]=\"{'invalid-textbox' :signUpForm.submitted && !email.valid }\">\n  <div *ngIf=\"signUpForm.submitted && email.errors\">\n    <label *ngIf=\"email.errors.required\" class=\"validation-message\">This field is required.</label>\n    <label *ngIf=\"email.errors.pattern\" class=\"validation-message\">Invalid email address.</label>\n  </div>\n  <input type=\"password\" #password=\"ngModel\" [(ngModel)]=\"userService.selectedUser.password\" name=\"password\" placeholder=\"Password\"\n  minlength=\"8\" required [pattern]=\"passwordRegex\" [ngClass]=\"{'invalid-textbox' :signUpForm.submitted && !password.valid }\">\n  <div *ngIf=\"signUpForm.submitted && password.errors\">\n    <label *ngIf=\"password.errors.required\" class=\"validation-message\">This field is required.</label>\n    <label *ngIf=\"password.errors.minlength\" class=\"validation-message\">Enter atleast 8 characters.</label>\n    <label *ngIf=\"password.errors.pattern\" class=\"validation-message\">Minimum eight characters, at least one letter, one number and one special character.</label>\n  </div>\n  <input type=\"submit\" value=\"Sign Up\">\n</form>\n<a class=\"google-btn\" href=\"/auth/google\">Google+</a>\n<!-- Success message -->\n<div class=\"success\" *ngIf=\"showSucessMessage\">\n  Saved successfully\n</div>\n\n<!-- Error message -->\n<div class=\"alert\" *ngIf=\"serverErrorMessages\">\n  {{serverErrorMessages}}\n</div>"
+module.exports = "<div>\n  <img src=\"/assets/img/users.png\" id=\"icon\" alt=\"User Icon\" />\n</div>\n\n<form #signUpForm=\"ngForm\" (ngSubmit)=\"signUpForm.valid && onSubmit(signUpForm)\">\n  <input type=\"text\" #fullName=\"ngModel\" [(ngModel)]=\"userService.selectedUser.fullName\" name=\"fullName\" placeholder=\"Full Name\"\n  required  [ngClass]=\"{'invalid-textbox' :signUpForm.submitted && !fullName.valid }\">\n  <div *ngIf=\"signUpForm.submitted && !fullName.valid\">\n    <label class=\"validation-message\">This field is required.</label>\n  </div>\n  <input type=\"text\" #email=\"ngModel\" [(ngModel)]=\"userService.selectedUser.email\" name=\"email\" placeholder=\"Email\"\n  required [pattern]=\"emailRegex\"  [ngClass]=\"{'invalid-textbox' :signUpForm.submitted && !email.valid }\">\n  <div *ngIf=\"signUpForm.submitted && email.errors\">\n    <label *ngIf=\"email.errors.required\" class=\"validation-message\">This field is required.</label>\n    <label *ngIf=\"email.errors.pattern\" class=\"validation-message\">Invalid email address.</label>\n  </div>\n  <input type=\"password\" #password=\"ngModel\" [(ngModel)]=\"userService.selectedUser.password\" name=\"password\" placeholder=\"Password\"\n  minlength=\"8\" required [pattern]=\"passwordRegex\" [ngClass]=\"{'invalid-textbox' :signUpForm.submitted && !password.valid }\">\n  <div *ngIf=\"signUpForm.submitted && password.errors\">\n    <label *ngIf=\"password.errors.required\" class=\"validation-message\">This field is required.</label>\n    <label *ngIf=\"password.errors.minlength\" class=\"validation-message\">Enter atleast 8 characters.</label>\n    <label *ngIf=\"password.errors.pattern\" class=\"validation-message\">Minimum eight characters, at least one letter, one number and one special character.</label>\n  </div>\n  <input type=\"submit\" value=\"Sign Up\">\n</form>\n\n<!-- Success message -->\n<div class=\"success\" *ngIf=\"showSucessMessage\">\n  Saved successfully\n</div>\n\n<!-- Error message -->\n<div class=\"alert\" *ngIf=\"serverErrorMessages\">\n  {{serverErrorMessages}}\n</div>"
 
 /***/ }),
 
@@ -774,7 +925,7 @@ Object(_angular_platform_browser_dynamic__WEBPACK_IMPORTED_MODULE_1__["platformB
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! c:\project\project\MEAN_stack\Angular6\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\project\project\MEAN_stack\Angular6\src\main.ts */"./src/main.ts");
 
 
 /***/ })

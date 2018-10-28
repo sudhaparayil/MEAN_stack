@@ -6,18 +6,24 @@ const jwt = require('jsonwebtoken');
 var userSchema = new mongoose.Schema({
     fullName: {
         type: String,
-        required: 'Full name can\'t be empty'
+        // required: 'Full name can\'t be empty'
     },
     email: {
         type: String,
-        required: 'Email can\'t be empty',
-        unique: true
+        // required: 'Email can\'t be empty',
+        // unique: true
     },
     password: {
         type: String,
-        required: 'Password can\'t be empty',
-        minlength : [8,'Password must be Minimum eight characters, at least one letter, one number and one special character']
+        // required: 'Password can\'t be empty',
+        // minlength : [8,'Password must be Minimum eight characters, at least one letter, one number and one special character']
     },
+    google: {
+		id: String,
+		token: String,
+		email: String,
+		name: String
+	},
     saltSecret: String
 });
 
